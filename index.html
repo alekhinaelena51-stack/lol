@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тренажер</title>
+  <style>
+    :root {
+      --bg: #1a2332;
+      --bg-accent: #243044;
+      --text: #f0ebe3;
+      --muted: #a8b0bc;
+      --accent: #6b9e78;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+      background:
+        radial-gradient(ellipse at 20% 30%, #2a3a4a 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, #1e2d28 0%, transparent 45%),
+        var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      width: min(420px, 90vw);
+      padding: 3rem 2.5rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 0.75rem;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    li {
+      font-size: 1.25rem;
+      color: var(--muted);
+      padding: 0.85rem 1.1rem;
+      background: var(--bg-accent);
+      border-left: 3px solid var(--accent);
+      transition: color 0.2s, transform 0.2s;
+    }
+
+    li:hover {
+      color: var(--text);
+      transform: translateX(4px);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Тренажер</h1>
+    <ul>
+      <li>доброе утро</li>
+      <li>добрый день</li>
+      <li>добрый вечер</li>
+    </ul>
+  </main>
+</body>
+</html>
